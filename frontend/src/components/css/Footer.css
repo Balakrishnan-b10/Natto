@@ -1,0 +1,73 @@
+.back-bg
+{
+    background-color:  #ffebcd;
+    color: black;
+padding-top: 10vh;
+padding-bottom: 10vh;
+    
+}
+.icon-box
+{
+    width: 30px;
+    height: 30px;
+  
+    padding: 5px;
+   
+    border-radius: 3px;
+    background-color: ffebcd;
+    opacity: 0.9;
+    color: #a12626;
+}
+
+
+
+.icon-box1
+{
+    width: 30px;
+    height: 30px;
+  margin-left: 2vh;
+    padding: 5px;
+   
+    border-radius: 3px;
+    background-color: ffebcd;
+    opacity: 0.9;
+    color: #a12626;
+}
+
+.service-cont
+{
+    margin-top: 3vh;
+   color: rgb(58, 57, 57);
+}
+
+.service-cont-serve
+{
+    color: rgb(58, 57, 57);
+    font-size: 16px;
+}
+.service-cont-serve p{
+    margin-left: 20px;
+    margin-top: -8px;
+}
+.service-cont-one
+{
+    margin-top: 8vh;
+    color: rgb(141, 137, 137);
+}
+.final-foot
+{
+    width: 100%;
+    color: #ffffff80;
+    text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+ 
+
+   
+}
+.service-cont:hover, .service-cont-serve:hover {
+    color: #a12626 !important;
+}

@@ -1,0 +1,15 @@
+.password-toggle {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    cursor: pointer;
+  }
+  
+  .visible-icon {
+    font-size: 1.2rem;
+  }
+  
+  .icon {
+    margin-right: 5px;
+  }
+  

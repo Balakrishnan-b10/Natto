@@ -1,0 +1,96 @@
+.home-pg {
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* position: relative; */
+    background-image: url('../../images/user/pexels-rajesh-tp-749235-1603901.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+.home-pg1{
+  color: bisque;
+  align-items: center;
+  padding-top: 270px;
+  padding-left: 100px;
+  font-size: 90px;
+}
+.home-pg2{
+  color: white;
+  padding-top: 20px;
+  padding-left: 100px;
+  font-size: 50px;
+}
+.home-pg-btn{
+  margin-left: 100px;
+  margin-top: 30px;
+}
+.search-container {
+  display: grid;
+  grid-template-columns: 1fr; /* Single column by default */
+  gap: 50px; /* Space between items */
+  margin-top: 100px;
+  margin-left: 100px;
+}
+
+.search-box, .location-box {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+
+.search-btn {
+  padding: 10px 45px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.search-btn:hover {
+  background-color: #45a049;
+}
+
+/* Responsive layout for larger screens */
+@media (min-width: 768px) {
+  .search-container {
+    grid-template-columns: 1fr 1fr auto; /* Two inputs + one button in a row */
+  }
+}
+/* Card Title Styling */
+.card-title {
+  font-size: 24px;     /* Adjust the font size */
+  font-weight: bold;   /* Make the title bold */
+  color: #333;         /* Change the text color */
+  margin-bottom: 15px; /* Add space below the title */
+  text-align: center;  /* Center the title */
+}
+
+/* Card Text Styling */
+.card-text {
+  font-size: 16px;     /* Adjust the font size */
+  color: #666;         /* Set a slightly muted color for text */
+  margin-bottom: 20px; /* Add space below the text */
+  text-align: center;  /* Center the text */
+}
+
+/* Button Styling */
+.card-button {
+  background-color: #f0cb99;  /* Custom background color */
+  border: none;               /* Remove border */
+  padding: 10px 30px;         /* Adjust padding for better appearance */
+  font-size: 16px;            /* Adjust font size */
+  border-radius: 5px;         /* Rounded corners */
+  color: #fff;                /* White text */
+  display: block;             /* Display button as block for centering */
+  margin: 0 auto;             /* Center the button */
+  transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+/* Button Hover Effect */
+.card-button:hover {
+  background-color: #d3a372; /* Change color on hover */
+}
+
+
+  

@@ -1,0 +1,70 @@
+.about-pg{
+    background-image: url('../../images/user/pexels-yaroslav-shuraev-9632629.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically centers */
+    align-items: center; /* Horizontally centers */
+    color: white;
+    background-attachment: fixed;
+}
+.center-home-one-about{
+    font-size: 25px;
+}
+.center-home-two-about{
+    font-size: 100px;
+}
+.image-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+  
+  .hover-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+ .image-container:hover .overlay {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .overlay p {
+    margin: 0;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .video-container {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
+
+  
+  
+  

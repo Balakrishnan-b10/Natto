@@ -1,0 +1,133 @@
+/* Container for the whole component */
+.containermenu {
+  width: 50%; /* Adjusted width for a cleaner look */
+  margin: 10px auto; /* Centering horizontally */
+  margin-top: 100px;
+  padding: 20px; /* Added padding for better spacing inside the container */
+  border-radius: 10px;
+  background-color: #f5f5f5;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header section for user info and logout button */
+.headermenu {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+/* Style for the welcome message */
+.welcome-message {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Style for the logout button */
+.logout-button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #cc0000;
+}
+
+/* Menu form styling */
+.menu-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px; /* Reduced top margin */
+}
+
+.label {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Input fields style */
+.input-field {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 80%; /* Adjusted width for shorter input fields */
+  font-size: 1em;
+  box-sizing: border-box;
+  margin: 0 auto; /* Centering the input fields */
+}
+
+/* Submit button style */
+.submit-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+  margin: 20px auto; /* Centering the button */
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+}
+/* Menu form styling */
+.menu-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Adjust spacing between each form group */
+  margin-top: 20px;
+}
+
+/* Form group for each label-input pair */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the left */
+}
+
+/* Label styling */
+.label {
+  font-weight: bold;
+  margin-bottom: 5px; /* Adds spacing between label and input */
+}
+
+/* Input fields style */
+.input-field {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 80%; /* Adjust width as needed */
+  font-size: 1em;
+  box-sizing: border-box;
+  margin: 0 0;
+}
+
+/* Submit button style */
+.submit-button {
+  background-color: #4CAF50;
+  color: white;
+  width: 40%;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+  margin: 20px auto; /* Centering the button */
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+}

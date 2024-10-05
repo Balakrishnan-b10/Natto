@@ -1,0 +1,86 @@
+/* General Styling */
+.nav-container {
+    background-color: lightgray;
+    width: 100%;
+    border-bottom: 2px solid #ccc;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: white;
+    height: 90px;
+    transition: background-color 0.3s, border-bottom 0.3s;
+    padding: 0 30px;
+    border-bottom: 2px solid transparent;
+}
+
+.navbar.scrolled {
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #ddd;
+}
+
+/* Row Styling */
+.nav-row {
+    padding: 10px 0;
+    margin: 0;
+}
+
+/* Brand Styling */
+.nav-brand {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo {
+    font-size: 40px;
+    font-family: sans-serif;
+    color: #a12626;
+    margin-left: 15px;
+}
+
+/* Navigation Links Styling */
+.nav_items .nav-link {
+    margin: 0 20px;
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav_items .nav-link:hover {
+    color: #a12626;
+}
+
+/* User Greeting and Buttons */
+.user-actions {
+    display: flex;
+    gap: 10px; /* Adjusted spacing */
+}
+
+.user-greeting {
+    font-size: 18px;
+}
+
+.logout-btn, .login-btn {
+    font-size: 16px;
+    color: #a12626;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.logout-btn:hover, .login-btn:hover {
+    color: #333;
+}
+
+/* Add Your Restaurant Link */
+.add-restaurant-link {
+    font-size: 16px;
+    color: #a12626;
+    text-decoration: underline;
+}
+
+.add-restaurant-link:hover {
+    color: #333;
+}

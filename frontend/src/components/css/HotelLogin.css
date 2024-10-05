@@ -1,0 +1,104 @@
+/* HotelLogin.css */
+
+.hotel-login-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffdead;
+  overflow: hidden; /* Prevent overflow in the container */
+}
+
+.carousel-column {
+  background-color: aqua;
+  padding: 100px;
+}
+
+.carousel {
+  padding: 100px;
+  height: 80vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-image {
+  width: 60%; /* Adjust to ensure images fit within their container */
+  height: auto;
+  
+}
+
+.login-form-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%; /* Ensure the form column takes full width on smaller screens */
+  padding: 20px;
+  box-sizing: border-box; /* Ensure padding does not affect width */
+}
+
+.login-form {
+  width: 100%;
+  max-width: 600px; /* Limit max width for larger screens */
+  background-color:bisque; 
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; /* Ensure padding does not affect width */
+  overflow: hidden; /* Prevent overflow in the form */
+}
+
+.login-form .ant-form-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.login-form .ant-form-item-label {
+  margin-bottom: 0; /* Remove default bottom margin for the label */
+  margin-top: 8px; /* Add space above the label */
+}
+
+.login-form .ant-form-item-control {
+  width: 100%;
+}
+
+.login-form .ant-form-item-label > label {
+  font-weight: bold;
+}
+
+/* Ensure full width for inputs */
+.login-form .ant-form-item-control-input {
+  width: 100%;
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.signup-link {
+  text-align: center;
+  margin-top: 16px;
+}
+
+.signup-link a {
+  color: #1890ff; /* Ant Design primary color */
+  font-weight: bold;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .login-form {
+    max-width: 90%; /* Adjust form width on smaller screens */
+  }
+
+  .carousel-image {
+    width: 100%; /* Ensure images fit within their container */
+  }
+}
