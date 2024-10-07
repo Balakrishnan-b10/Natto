@@ -24,7 +24,8 @@ function Header() {
 
   const handleLogout = () => {
     localStorage.removeItem("userName");
-    localStorage.removeItem("userId");
+    localStorage.removeItem("id");
+    localStorage.removeItem("email");
     setUserName("");
   };
 
@@ -64,19 +65,17 @@ function Header() {
               <Link to="/contactus" className="nav-link">
                 Contact Us
               </Link>
-              
             </Nav>
           </Col>
-          <Col lg={1} className="d-flex justify-content-end align-items-center">
-            {/* Trigger the modal on click */}
-            <Link
-              to="/restaurantsignup"
-              // onClick={() => setShowModal(true)}
-              // className="add-restaurant-link"
+          {/* Show "Add Your Restaurant" link only if user is not logged in */}
+          {!userName && (
+            <Col
+              lg={1}
+              className="d-flex justify-content-end align-items-center"
             >
-              Add Your Restaurant
-            </Link>
-          </Col>
+              <Link to="/restaurantsignup">Add Your Restaurant</Link>
+            </Col>
+          )}
           <Col
             lg={2}
             className="d-flex justify-content-end align-items-center user-actions"

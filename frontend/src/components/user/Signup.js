@@ -55,7 +55,7 @@ function Signup() {
   return (
     <div className="top-container3">
       <ToastContainer />
-      <div className="container">
+      <div className="container-signup">
         <div className="header">
           <div className="text">Sign Up</div>
           <div className="underline"></div>

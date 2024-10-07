@@ -19,6 +19,7 @@ import Abtimg8 from "../../images/user/1.png";
 import Abtimg9 from "../../images/user/2.png";
 import Abtimg10 from "../../images/user/3.png";
 import Abtimg11 from "../../images/user/4.png";
+import Abtimg12 from "../../images/user/video.png";
 
 function About() {
   useEffect(() => {
@@ -314,7 +315,7 @@ function About() {
           <img
             src={Abtimg4}
             alt="Description of img"
-            style={{ width: "100%", height: "auto" }}
+            style={{ width: "100%", height: "500px" }}
           />
         </Col>
         <Col lg={7}>
@@ -336,7 +337,14 @@ function About() {
             <Col lg={3}></Col>
           </Row>
         </Col>
-      </Row><Footer/>
+      </Row>
+      <Row style={{ marginTop: "50px", backgroundColor:'black', height:'90vh', marginBottom:'50px' }}>
+        <Col lg={24}><img
+                src={Abtimg12}
+                alt="Description of img"
+                style={{width:'80%', height:'560px', marginLeft:'130px', marginTop:'50px'}}
+              />
+        </Col></Row><Footer/>
     </div>
   );
 }

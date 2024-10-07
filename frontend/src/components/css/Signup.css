@@ -6,6 +6,7 @@
     display: flex;  
     justify-content: center;
     align-items: center;
+    overflow: hidden !important;
 }
 .top-container4{
     background-image: url('../../images/user/pexels-darren-fan-1617868075-27528186.jpg');
@@ -15,6 +16,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden !important;
+}
+.container-signup{
+    display: flex;
+    flex-direction: column;
+    width: 600px !important;
+    border-radius: 20px;
+    backdrop-filter: blur(3.5px);
+    background-color: rgba(0, 0, 0, 0.25);
 }
 .container{
     display: flex;
@@ -45,7 +55,7 @@
     border-radius: 9px;
 }
 .inputs{
-    margin-top: 55px;
+    margin-top: 25px;
     display: flex;
     flex-direction: column;
     gap: 25px;

@@ -164,33 +164,47 @@ const Addhotel = () => {
         </Form.Item>
 
         <Form.Item
-          label="Category"
-          name="category"
-          rules={[{ required: true, message: "Please select a category" }]}
-        >
-          <Select placeholder="Select a category">
-            <Option value="Starters">Starters</Option>
-            <Option value="Main Course">Main Course</Option>
-            {/* More options here... */}
-          </Select>
-        </Form.Item>
+  label="Category"
+  name="category"
+  rules={[{ required: true, message: "Please select a category" }]}
+>
+  <Select placeholder="Select a category">
+    <Option value="Starters">Starters</Option>
+    <Option value="Main Course">Main Course</Option>
+    <Option value="Desserts">Desserts</Option>
+    <Option value="Beverages">Beverages</Option>
+    <Option value="Fast Food">Fast Food</Option>
+    <Option value="Seafood">Seafood</Option>
+    <Option value="Vegetarian">Vegetarian</Option>
+    <Option value="Non-Vegetarian">Non-Vegetarian</Option>
+    <Option value="Vegan">Vegan</Option>
+    <Option value="Gluten-Free">Gluten-Free</Option>
+    <Option value="Bakery">Bakery</Option>
+    <Option value="Salads">Salads</Option>
+    <Option value="Grills & BBQ">Grills & BBQ</Option>
+  </Select>
+</Form.Item>
 
-        <Form.Item
-          label="Payment Options"
-          name="paymentOptions"
-          rules={[
-            { required: true, message: "Please select a payment option" },
-          ]}
-        >
-          <Select
-            mode="tags"
-            style={{ width: "100%" }}
-            placeholder="Add payment options"
-          >
-            <Option value="Cash">Cash</Option>
-            {/* More options here... */}
-          </Select>
-        </Form.Item>
+<Form.Item
+  label="Payment Options"
+  name="paymentOptions"
+  rules={[{ required: true, message: "Please select a payment option" }]}
+>
+  <Select
+    mode="tags"
+    style={{ width: '100%' }}
+    placeholder="Add payment options"
+  >
+    <Option value="Cash">Cash</Option>
+    <Option value="Card">Card</Option>
+    <Option value="Online">Online</Option>
+    <Option value="Google Pay">Google Pay</Option>
+    <Option value="Apple Pay">Apple Pay</Option>
+    <Option value="UPI">UPI</Option>
+    <Option value="Net Banking">Net Banking</Option>
+    <Option value="Wallet">Wallet</Option>
+  </Select>
+</Form.Item>
 
         {/* Operating Hours */}
         <div className="form-row">
@@ -222,15 +236,26 @@ const Addhotel = () => {
         </div>
 
         <Form.Item
-          label="Cuisine Type"
-          name="cuisineType"
-          rules={[{ required: true, message: "Please select a cuisine type" }]}
-        >
-          <Select placeholder="Select a cuisine type">
-            <Option value="Italian">Italian</Option>
-            {/* More options here... */}
-          </Select>
-        </Form.Item>
+  label="Cuisine Type"
+  name="cuisineType"
+  rules={[{ required: true, message: "Please select a cuisine type" }]}
+>
+  <Select placeholder="Select a cuisine type">
+    <Option value="Italian">Italian</Option>
+    <Option value="Chinese">Chinese</Option>
+    <Option value="Indian">Indian</Option>
+    <Option value="Mexican">Mexican</Option>
+    <Option value="Japanese">Japanese</Option>
+    <Option value="Thai">Thai</Option>
+    <Option value="Mediterranean">Mediterranean</Option>
+    <Option value="American">American</Option>
+    <Option value="French">French</Option>
+    <Option value="Greek">Greek</Option>
+    <Option value="Korean">Korean</Option>
+    <Option value="Lebanese">Lebanese</Option>
+    <Option value="Vietnamese">Vietnamese</Option>
+  </Select>
+</Form.Item>
 
         <Form.Item label="Hotel Type" name="hotelType" initialValue="Standard">
           <Select>

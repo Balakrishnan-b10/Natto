@@ -1,7 +1,6 @@
 import bcrypt from "bcrypt";
 import Signup from "../model/Signupmodel.js";
 import Restaurant from "../model/Restaurant.js";
-import { getAllRestaurants, updateRestaurant } from "./restaurantController.js";
 const SignupController = {
   async register(req, res) {
     console.log("req.body", req.body);

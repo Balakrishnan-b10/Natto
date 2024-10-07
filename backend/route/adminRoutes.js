@@ -6,7 +6,6 @@ const { sign, JsonWebTokenError } = pkg; // Import 'sign' for JWT token generati
 import Admin from "../model/Adminlogin.js";
 
 const router = express.Router();
-
 // Secret key for JWT
 const JWT_SECRET = "your_jwt_secret_key";
 
