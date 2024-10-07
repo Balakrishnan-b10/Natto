@@ -24,7 +24,8 @@ function Header() {
 
   const handleLogout = () => {
     localStorage.removeItem("userName");
-    localStorage.removeItem("userId");
+    localStorage.removeItem("id");
+    localStorage.removeItem("email");
     setUserName("");
   };
 
@@ -68,10 +69,11 @@ function Header() {
           </Col>
           {/* Show "Add Your Restaurant" link only if user is not logged in */}
           {!userName && (
-            <Col lg={1} className="d-flex justify-content-end align-items-center">
-              <Link to="/restaurantsignup">
-                Add Your Restaurant
-              </Link>
+            <Col
+              lg={1}
+              className="d-flex justify-content-end align-items-center"
+            >
+              <Link to="/restaurantsignup">Add Your Restaurant</Link>
             </Col>
           )}
           <Col

@@ -5,7 +5,7 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 import "../css/Blogs.css";
 import { Card, Col, Row } from 'react-bootstrap';
 import AOS from 'aos';
-import { Pagination } from 'antd';
+
 
 function Blogs() {
   useEffect(() => {
@@ -15,63 +15,30 @@ function Blogs() {
     });
   }, []);
 
-  // Updated items array without 'last' and 'content'
+  // Updated items array
   const items = [
-    [
-      {
-        id: 1, titleh: 'Little Italy',
-        description: 'A small river named Duden flows by their place and supplies it with the necessary regelialia.',
-        image: 'https://images.pexels.com/photos/1268855/pexels-photo-1268855.jpeg?auto=compress&cs=tinysrgb&w=600'
-      },
-      {
-        id: 2, titleh: 'Best Hotel near Beach in Hawaii',
-        description: 'A small river named Duden flows by their place and supplies it with the necessary regelialia.',
-        image: 'https://images.pexels.com/photos/2598638/pexels-photo-2598638.jpeg?auto=compress&cs=tinysrgb&w=600'
-      },
-      {
-        id: 3, titleh: 'Best Hotel near Beach in Hawaii',
-        description: 'A small river named Duden flows by their place and supplies it with the necessary regelialia.',
-        image: 'https://images.pexels.com/photos/1320686/pexels-photo-1320686.jpeg?auto=compress&cs=tinysrgb&w=600'
-      },
-      {
-        id: 1, titleh: 'Little Italy',
-        description: 'A small river named Duden flows by their place and supplies it with the necessary regelialia.',
-        image: 'https://images.pexels.com/photos/1268855/pexels-photo-1268855.jpeg?auto=compress&cs=tinysrgb&w=600'
-      },
-      {
-        id: 2, titleh: 'Best Hotel near Beach in Hawaii',
-        description: 'A small river named Duden flows by their place and supplies it with the necessary regelialia.',
-        image: 'https://images.pexels.com/photos/2598638/pexels-photo-2598638.jpeg?auto=compress&cs=tinysrgb&w=600'
-      },
-      {
-        id: 3, titleh: 'Best Hotel near Beach in Hawaii',
-        description: 'A small river named Duden flows by their place and supplies it with the necessary regelialia.',
-        image: 'https://images.pexels.com/photos/1320686/pexels-photo-1320686.jpeg?auto=compress&cs=tinysrgb&w=600'
-      },{
-        id: 1, titleh: 'Little Italy',
-        description: 'A small river named Duden flows by their place and supplies it with the necessary regelialia.',
-        image: 'https://images.pexels.com/photos/1268855/pexels-photo-1268855.jpeg?auto=compress&cs=tinysrgb&w=600'
-      },
-      {
-        id: 2, titleh: 'Best Hotel near Beach in Hawaii',
-        description: 'A small river named Duden flows by their place and supplies it with the necessary regelialia.',
-        image: 'https://images.pexels.com/photos/2598638/pexels-photo-2598638.jpeg?auto=compress&cs=tinysrgb&w=600'
-      },
-      {
-        id: 3, titleh: 'Best Hotel near Beach in Hawaii',
-        description: 'A small river named Duden flows by their place and supplies it with the necessary regelialia.',
-        image: 'https://images.pexels.com/photos/1320686/pexels-photo-1320686.jpeg?auto=compress&cs=tinysrgb&w=600'
-      },
-      // Additional items...
-    ],
-    // Additional pages...
+    {
+      id: 1, titleh: 'Private Party',
+      description: 'Enjoy an intimate gathering with close friends and family in a cozy, private setting. We offer a wide range of South Indian delicacies that will elevate your party experience.',
+      image: 'https://iamosahan.com/wrapbootstrap-pillarix/catring/img/ocasion/ocasion-image-1.png'
+    },
+    {
+      id: 2, titleh: 'Wedding Recepction',
+      description: 'Make your special day unforgettable with our exquisite Indian cuisine. We provide a lavish spread that complements the grandeur of your wedding reception.',
+      image: 'https://iamosahan.com/wrapbootstrap-pillarix/catring/img/ocasion/ocasion-image-2.png'
+    },
+    {
+      id: 3, titleh: 'Corporate Event',
+      description: 'Host a professional and well-organized corporate event with our top-notch catering services. We offer a variety of cuisine options to suit all your business needs.',
+      image: 'https://iamosahan.com/wrapbootstrap-pillarix/catring/img/ocasion/ocasion-image-3.png'
+    },
+    {
+      id: 4, titleh: 'Birthday Party',
+      description: 'Celebrate your birthday with a customized menu that suits all age groups. Our party packages include a range of delightful dishes for a memorable experience.',
+      image: 'https://iamosahan.com/wrapbootstrap-pillarix/catring/img/ocasion/ocasion-image-4.png'
+    },
+    // Additional items...
   ];
-
-  const [currentPage, setCurrentPage] = useState(1);
-
-  const handlePageChange = (page) => {
-    setCurrentPage(page);
-  };
 
   return (
     <div>
@@ -84,12 +51,13 @@ function Blogs() {
         </div>
         <div className="center-home-two-about">Blogs</div>
       </div>
-    <Row style={{ marginTop: "10vh" }}>
-        {items[currentPage - 1].map(item => (
-          <Col key={item.id} lg={4}>
+      
+      <Row style={{ marginTop: "10vh" }}>
+        {items.map(item => (
+          <Col key={item.id} lg={6}>
             <Card className='card-blog-box' data-aos="fade-up">
               <Card.Body>
-                <img src={item.image} style={{ width: "100%", height: "37vh" }} alt={item.titleh} />
+                <img src={item.image} style={{ width: "100%", height: "65vh" }} alt={item.titleh} />
                 <Card.Title className='title-blog'>{item.titleh}</Card.Title>
                 <Card.Text className='des-blog'>{item.description}</Card.Text>
               </Card.Body>
@@ -97,16 +65,6 @@ function Blogs() {
           </Col>
         ))}
       </Row>
-
-      <Pagination
-        current={currentPage}
-        pageSize={1}
-        total={items.length}
-        onChange={handlePageChange}
-        showSizeChanger={false}
-        style={{ marginTop: "10vh", marginBottom: "10vh", textAlign: 'center' }}
-      />
-
       <Footer />
     </div>
   );
