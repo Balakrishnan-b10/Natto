@@ -1,0 +1,18 @@
+.blogs-pg{
+    background-image: url('../../images/user/pexels-hson-19647394.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically centers */
+    align-items: center; /* Horizontally centers */
+    color: white;
+    background-attachment: fixed;
+}
+.center-home-one-about{
+    font-size: 25px;
+}
+.center-home-two-about{
+    font-size: 100px;
+}

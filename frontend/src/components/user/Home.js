@@ -208,7 +208,7 @@ function Home() {
         <Col lg={12}>
           <Row>
             <Col style={{ marginTop: "40px" }}>
-              <h2>Why FoodChow?</h2>
+              <h2>Why Natto?</h2>
             </Col>
             <Col style={{ marginTop: "10px" }}>
               <Row style={{ paddingTop: "10px" }}>
@@ -224,7 +224,7 @@ function Home() {
                   <p>
                     Our Online Ordering Solution allows you to take orders
                     through Your own Website, Your Own Mobile App, And through
-                    FoodChow website and Mobile App.
+                    Natto website and Mobile App.
                   </p>
                 </Col>
                 <Col lg={9}></Col>
@@ -258,7 +258,7 @@ function Home() {
                 <Col lg={13}>
                   <h4>Worldwide Support</h4>
                   <p>
-                    FoodChow support is available worldwide. Contact our support
+                    Natto support is available worldwide. Contact our support
                     team and we'll connect you to an expert to get your issue
                     resolved within 24 Business hours.
                   </p>
@@ -276,7 +276,7 @@ function Home() {
                 <Col lg={13}>
                   <h4>Single & Mutliple Oultets</h4>
                   <p>
-                    Do you have your restaurant in multiple locations? FoodChow
+                    Do you have your restaurant in multiple locations? Natto
                     Multi-outlet food ordering solution will help you manage all
                     these outlets with Super Admin functionality.
                   </p>
