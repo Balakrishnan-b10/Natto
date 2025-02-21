@@ -84,3 +84,71 @@
 .add-restaurant-link:hover {
     color: #333;
 }
+@media (max-width: 768px) {
+    /* Adjust navbar height and alignment */
+    .navbar {
+        height: 60px; /* Adjust to content height */
+        padding: 1px 0px; /* Consistent inner padding */
+        flex-direction: row; /* Stack items vertically */
+        align-items: center;
+    }
+
+    /* Navigation row adjustments */
+    .nav-row {
+        flex-direction: row; /* Stack links and actions */
+        align-items: center;
+        gap: -10px; /* Add spacing between elements */
+        width: 100%; /* Full width for better alignment */
+    }
+
+    /* Navigation links styling */
+    .nav_items {
+        display: flex;
+        flex-direction: column; /* Stack links vertically */
+        align-items: center;
+        gap: -10px; /* Spacing between links */
+    }
+
+    .nav_items .nav-link {
+        font-size: 1px; /* Adjust font size for smaller screens */
+        text-align:left;
+    }
+
+    /* Brand section adjustments */
+    .nav-brand {
+        display: flex;
+        flex-direction: row; /* Stack logo and text */
+        align-items: center;
+        margin-bottom: 0px;
+    }
+
+    .nav-logo {
+        font-size: 12px; /* Adjust logo size */
+        margin-bottom: 5px; /* Space below logo */
+    }
+
+    /* User actions section */
+    .user-actions {
+        display: flex;
+        flex-direction: row; /* Stack actions */
+        align-items: center;
+        gap: 5px; /* Spacing between elements */
+    }
+
+    .user-greeting {
+        font-size: 5px; /* Smaller font size for greeting */
+        text-align: center;
+    }
+
+    .logout-btn, .login-btn {
+        font-size: 5px; /* Smaller button font size */
+        padding: 8px 12px; /* Adjust button padding */
+    }
+
+    /* Add Your Restaurant Link styling */
+    .add-restaurant-link {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 10px; /* Space below other elements */
+    }
+}

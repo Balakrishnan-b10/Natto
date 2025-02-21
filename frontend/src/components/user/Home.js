@@ -95,13 +95,13 @@ function Home() {
         </div>
       </div>
       <Row style={{ height: "89vh" }}>
-        <Col lg={12}>
+        <Col lg={12} sm={24}>
           <Row>
             <Col>
-              <Row>
-                <Col lg={3}></Col>
+              <Row >
+                <Col lg={3} sm={6} ></Col>
                 <Col
-                  lg={16}
+                  lg={16} sm={32}
                   data-aos="fade-right"
                   style={{ fontSize: "45px", marginTop: "100px" }}
                 >
@@ -110,7 +110,7 @@ function Home() {
                     Discounts at nearby restaurants!
                   </b>
                 </Col>
-                <Col lg={5}></Col>
+                <Col lg={5} sm={10}></Col>
               </Row>
             </Col>
             <Col data-aos="fade-left">
@@ -130,7 +130,7 @@ function Home() {
             </Col>
           </Row>
         </Col>
-        <Col lg={12} style={{ marginTop: "100px" }}>
+        <Col lg={12} sm={24} style={{ marginTop: "100px" }}>
           <img
             src={Image1}
             alt="Description of img"
@@ -160,7 +160,7 @@ function Home() {
             <Row>
               {section.items.map((item) => (
                 <Col
-                  lg={8}
+                  lg={8} sm={24}
                   key={item.id}
                   style={{ padding: "40px", marginTop: "50px" }}
                 >
@@ -188,7 +188,7 @@ function Home() {
         ))}
       </div>
       <Row style={{ height: "100vh" }}>
-        <Col lg={12}>
+        <Col lg={12} sm={24}>
           <video
             width="100%"
             height="400px"
@@ -205,21 +205,21 @@ function Home() {
             Your browser does not support the video tag.
           </video>
         </Col>
-        <Col lg={12}>
+        <Col lg={12} sm={24}>
           <Row>
             <Col style={{ marginTop: "40px" }}>
               <h2>Why Natto?</h2>
             </Col>
             <Col style={{ marginTop: "10px" }}>
               <Row style={{ paddingTop: "10px" }}>
-                <Col lg={2}>
+                <Col lg={2} sm={24}>
                   <img
                     src={Image2}
                     alt="Description of img"
                     style={{ width: "70%", height: "auto" }}
                   />
                 </Col>
-                <Col lg={13}>
+                <Col lg={13} sm={24}>
                   <h4>Complete Online Solution</h4>
                   <p>
                     Our Online Ordering Solution allows you to take orders
@@ -227,7 +227,7 @@ function Home() {
                     Natto website and Mobile App.
                   </p>
                 </Col>
-                <Col lg={9}></Col>
+                <Col lg={9} sm={24}></Col>
               </Row>
               <Row style={{ paddingTop: "10px" }}>
                 <Col lg={2}>
@@ -248,14 +248,14 @@ function Home() {
                 <Col lg={9}></Col>
               </Row>
               <Row style={{ paddingTop: "10px" }}>
-                <Col lg={2}>
+                <Col lg={2} sm={24}>
                   <img
                     src={Image4}
                     alt="Description of img"
                     style={{ width: "70%", height: "auto" }}
                   />
                 </Col>
-                <Col lg={13}>
+                <Col lg={13} sm={24}>
                   <h4>Worldwide Support</h4>
                   <p>
                     Natto support is available worldwide. Contact our support
@@ -263,17 +263,17 @@ function Home() {
                     resolved within 24 Business hours.
                   </p>
                 </Col>
-                <Col lg={9}></Col>
+                <Col lg={9} sm={24}></Col>
               </Row>
               <Row style={{ paddingTop: "10px" }}>
-                <Col lg={2}>
+                <Col lg={2} sm={24}>
                   <img
                     src={Image5}
                     alt="Description of img"
                     style={{ width: "70%", height: "auto" }}
                   />
                 </Col>
-                <Col lg={13}>
+                <Col lg={13} sm={24}>
                   <h4>Single & Mutliple Oultets</h4>
                   <p>
                     Do you have your restaurant in multiple locations? Natto
@@ -281,7 +281,7 @@ function Home() {
                     these outlets with Super Admin functionality.
                   </p>
                 </Col>
-                <Col lg={9}></Col>
+                <Col lg={9} sm={24}></Col>
               </Row>
             </Col>
           </Row>
